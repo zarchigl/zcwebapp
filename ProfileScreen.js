@@ -1,6 +1,17 @@
 import React from "react";
 import "./ProfileScreen.css";
 
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("editProfileBtn");
+
+  if (btn) {
+    btn.addEventListener("click", () => {
+      // Redirect to your profile screen HTML
+      window.location.href = "ProfileScreen.html";
+    });
+  }
+});
+
 export default function ProfileScreen() {
   const user = {
     fullName: "John Doe",
